@@ -6,11 +6,11 @@ public class find_nth {
         System.out.println("enter your number ");
         Scanner s = new Scanner(System.in);
         int num = s.nextInt();
-        if(num>=0 && num<=arr.length-1){
-            System.out.println(arr[num]);
+        if(num>=0 && num<arr.length){
+            System.out.println("index from a "+num+"="+arr[num]);
         }
         else{
-            System.out.println("enter between 0 and "+arr[num]);
+            System.out.println("Invalid number! Index we must enter between 0 and "+(arr.length-1));
         }
     }
 }
